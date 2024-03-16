@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResidentAPI", "ResidentAPI\ResidentAPI.csproj", "{CB902415-9556-4B8C-B020-024188BAEB3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResidentApi.BusinessLogic", "ResidentApi.BusinessLogic\ResidentApi.BusinessLogic.csproj", "{4AC57D7B-3E52-4B2A-ACF0-BB57694E8250}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB902415-9556-4B8C-B020-024188BAEB3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB902415-9556-4B8C-B020-024188BAEB3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB902415-9556-4B8C-B020-024188BAEB3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB902415-9556-4B8C-B020-024188BAEB3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC57D7B-3E52-4B2A-ACF0-BB57694E8250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC57D7B-3E52-4B2A-ACF0-BB57694E8250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC57D7B-3E52-4B2A-ACF0-BB57694E8250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC57D7B-3E52-4B2A-ACF0-BB57694E8250}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E89B8F21-BAAD-4C78-BDEF-3D437589FCFD}
+	EndGlobalSection
+EndGlobal
