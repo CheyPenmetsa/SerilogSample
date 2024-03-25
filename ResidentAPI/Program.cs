@@ -1,15 +1,27 @@
 using ResidentApi.BusinessLogic.Manager;
 using ResidentApi.BusinessLogic.Repositories;
 using Serilog;
-using Serilog.Events;
-using Serilog.Formatting.Json;
+
+var configuration = new ConfigurationBuilder()
+           .SetBasePath(Directory.GetCurrentDirectory())
+           .AddJsonFile("appsettings.json")
+           .AddJsonFile("appsettings.Development.json")
+           .Build();
 
 var builder = WebApplication.CreateBuilder(args);
 
+// we can configure serilog via fluent api
+//builder.Services.AddSerilog(options =>
+//{
+//    options.MinimumLevel.Information()
+//           .WriteTo.Console(new JsonFormatter(), LogEventLevel.Debug);
+//});
+
+
 builder.Services.AddSerilog(options =>
 {
-    options.MinimumLevel.Information()
-           .WriteTo.Console(new JsonFormatter(), LogEventLevel.Debug);
+    //we can configure serilog from configuration
+    options.ReadFrom.Configuration(configuration);
 });
 
 // Add services to the container.
