@@ -44,5 +44,7 @@ namespace ResidentAPI.Controllers
             _logger.LogDebug($"Created resident with Id:{residentId}");
             return Ok(residentId);
         }
+
+
     }
 }
